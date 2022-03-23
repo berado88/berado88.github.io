@@ -1,0 +1,117 @@
+a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #88f;
+    }
+a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #88f;
+    }
+a:hover, a:active {
+    text-decoration: underline;
+    color: #9685BA;
+    }
+
+body {
+    font: 8pt/16pt sans-serif;
+    margin: 10px 10px 10px 10px;
+    padding: 0px;
+    }
+
+#leftcontent {
+    background:#FFFFCC;
+    position: absolute;
+    padding: 10px;
+    left: 10px;
+    top: 60px;
+    width: 130px;
+    border: 2px solid #B3AE94;
+    }
+
+#centercontent {
+    padding: 14px;
+    top: 65px;
+    margin-left: 155px;
+    margin-right: 155px;
+    border-left: 1px solid #B3AE94;
+    border-right: 1px solid #B3AE94;
+    }
+
+#info {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #B3AE94;
+    }
+
+#samplecode {
+    font: 8pt/16pt courier;
+    border: 1px solid #ddd;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+
+#rightcontent {
+    padding: 10px;
+    background:#FFFFCC;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    width: 130px;
+    border: 2px solid #B3AE94;
+    }
+
+#rightcontent p {
+    font-size: 10px
+    }
+
+#banner {
+    background: #99CC99;
+    height:40px;
+    font: 14pt georgia;
+    }
+
+#banner h2{
+    padding: 5px 0px 0px 5px;
+    }
+
+p,h1,pre {
+    margin: 0px 10px 0px 5px;
+    }
+
+#samplecode {
+    background: #eef;
+    }
+
+#telefonList ul {
+    margin: 0px 0px 0px 20px;
+    padding: 0;
+    line-height: 3ex;
+    list-style-type: none;
+    }
+
+#linkList li {
+    line-height: 4ex;
+    list-style-type: none;
+    }
+
+#linkList li a:link {
+    color: #88f;
+    }
+#linkList li a:visited {
+    color: #88f;
+    }
+
+.kerdes{
+    font-style: italic;
+    color: #AA0000;
+    padding: 14px;
+    }
+
+.valasz{
+    padding-left: 24px;
+    text-indent: -10px;
+    }
+
+.valasz2{
+    font-style: italic;
+    }

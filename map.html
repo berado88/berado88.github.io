@@ -1,0 +1,114 @@
+<!--
+        map.html
+        Copyright 2007 Berado '88 Kft. <berado@t-online.hu>
+
+        $Id: map.html 241 2007-01-26 10:43:50Z kilo $
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Unknown"/>
+    <meta name="keywords" content="szoftver, ügyvitel, bér, számfejtés, adó, tb, bevallás, szja, abev, abevimport" />
+    <meta name="robots" content="all" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Béradó '88 Kft.</title>
+    <style type="text/css" media="all">
+        @import "berado.css";
+    </style>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA94lfu_ugA-bKbQxI-CyzwRRMsxUJkf0r2LLD4xF5TSvLzEavNhTkdTM0RIiswz5ShxwQK6sMtI8z7g"
+      type="text/javascript"></script>
+    <script type="text/javascript">
+
+    function load() {
+      if (GBrowserIsCompatible()) {
+        var map = new GMap2(document.getElementById("map"));
+        map.addControl(new GLargeMapControl());
+        map.addControl(new GScaleControl());
+        map.setCenter(new GLatLng(46.2484088, 20.1432363), 13); //46.2484088, 20.1432363
+        map.addOverlay(new GMarker(map.getCenter()));
+        map.openInfoWindowHtml(map.getCenter(),"<b>Béradó '88 Kft.</b><br>6722 Szeged<br>Honvéd tér 5/B");
+      }
+    }
+    </script>
+</head>
+
+<body  id="berado" onload="load()" onunload="GUnload()">
+    <div id="banner">
+        <h2>Béradó '88 Kft.</h2>
+    </div>
+    <div id="container">
+
+        <div id="leftcontent">
+            <div id="quickSummary">
+                <p class="p1">6722 Szeged,</p>
+                <p class="p2">Honvéd tér 5/B</p>
+                <p class="p3">Tel.:</p>
+                <div id="telefonList">
+                    <ul>
+                        <li>62-672-803</li>
+                    </ul>
+                </div>
+            <p class="p3"><a href="./map.html">Térkép</a></p>
+            </div>
+        </div>
+
+        <div id="centercontent">
+            <div id="map" style="width: 640px; height: 480px"></div>
+        </div>
+
+        <div id="rightcontent">
+            <div id="linkList">
+                <div id="lhome">
+                    <h3 class="home">Főoldal</h3>
+                    <ul>
+                        <li><a href="./index.html">Főoldal</a></li>
+                    </ul>
+                </div>
+
+                <div id="lfaq">
+                    <h3 class="faq">Tájékoztatók:</h3>
+                    <ul>
+                        <li><a href="./doc.html">Összes tájékoztató</a></li>
+                    </ul>
+                </div>
+
+                <div id="lfaq">
+                    <h3 class="faq">Gyakori kérdések:</h3>
+                    <ul>
+                        <li><a href="./faq.html">GYIK</a></li>
+                    </ul>
+                </div>
+
+                <div id="lhasznos">
+                    <h3 class="hasznos">Hasznos helyek:</h3>
+                    <ul>
+                        <li><a href="http://www.apeh.hu">APEH</a></li>
+                        <li><a href="http://www.ksh.hu">KSH</a></li>
+                        <li><a href="http://www.oep.hu">OEP</a></li>
+                        <li><a href="http://www.onyf.hu">ONYF</a></li>
+                    </ul>
+                </div>
+
+                <div id="lvegyes">
+                    <h3 class="vegyes">Ide írhatsz:</h3>
+                    <ul>
+                        <li><a href="mailto:berado88@gmail.com">E-mail</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1239219-1";
+urchinTracker();
+</script>
+</body>
+</html>

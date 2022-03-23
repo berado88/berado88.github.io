@@ -1,0 +1,511 @@
+<!--
+        This program is free software; you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation; either version 2 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program; if not, write to the Free Software
+        Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+        faq.html
+        Copyright 2008 Berado '88 Kft. <berado@t-online.hu>
+
+        $Id: faq.html 878 2011-02-22 09:32:05Z kilo $
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu" lang="hu">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Béradó '88 Kft."/>
+    <meta name="keywords" content="szoftver, ügyvitel, bér, számfejtés, adó, tb, bevallás, szja, abev, abevimport" />
+    <meta name="robots" content="all" />
+    <title>Béradó '88 Kft.</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style type="text/css" media="all">
+        @import "berado.css";
+    </style>
+</head>
+
+
+<body id="berado">
+
+<div id="banner">
+    <h2>Béradó '88 Kft.</h2>
+</div>
+
+<div id="container">
+    <div id="leftcontent">
+
+        <div id="quickSummary">
+            <p class="p1">6722 Szeged,</p>
+            <p class="p2">Honvéd tér 5/B</p>
+            <p class="p3">Tel.:</p>
+            <div id="telefonList">
+                <ul>
+                    <li>62-672-803</li>
+                </ul>
+            </div>
+            <p class="p3"><a href="./map.html">Térkép</a></p>
+        </div>
+    </div>
+
+    <div id="centercontent">
+
+        <div id="info">
+            <ul>
+                <li><a href="#internal">A program nem indul: Internal consistency error</a></li>
+                <li><a href="#ujverzio">Új verzió telepítése</a></li>
+                <li><a href="#belsomentes">Mentés programból nem megy</a></li>
+                <li><a href="#mentesmashova">Mentés más eszközre (nem floppy)</a></li>
+                <li><a href="#kulsomentes">Mentés külső batch fájllal nem megy</a></li>
+                <li><a href="#nyomtatas">Nyomtatás USB nyomtatóra</a></li>
+                <li><a href="#nyomtatas2">Nyomtatás USB nyomtatóra különálló gépen</a></li>
+                <li><a href="#ujgepre">Új gépre telepítés</a></li>
+                <li><a href="#2004">A 2004-es bér program indításkor hibával megáll</a></li>
+                <li><a href="#2006">A 2006-os bér program a 06084-es bevallásban programhibával kilép</a></li>
+                <li><a href="#2009">A 2009-es bér program hiányzik</a></li>
+                <li><a href="#2010">A 2010-es bér program "Csak a 2011-2012-es év adataival használható" üzenettel kilép .</a></li>
+                <li><a href="#2011">A 2011-es bér program programhibával kilép .</a></li>
+                <li><a href="#2012">A 2012-es bér program "Csak a 2013-2014-es év adataival használható" üzenettel kilép .</a></li>
+                <li><a href="#2014">A 2014-es bér program hibaüzenet nélkül kilép .</a></li>
+                <li><a href="#2015">A 2015-ös bér program nem indul</a></li>
+                <li><a href="#2016">A 2016-os bér program nem indul</a></li>
+                <li><a href="#2017">A 2017-es bér program nem indul</a></li>
+                <li><a href="#2018">A 2018-as bér program nem indul</a></li>
+                <li><a href="#2019">A 2019-es bér program nem indul</a></li>
+                <li><a href="#onrevizio">Hogyan tudok Abev önrevíziót készíteni a 2009-, 2010-es évekre?</a></li>
+                <li><a href="#uniqwt">A program "Collating sequence UNIQWT not found" programhibával kilép.</a></li>
+            </ul>
+        </div>
+
+        <div id="info">
+            <a name="internal"></a>
+            <div class="kerdes">K: A program nem indul: Internal consistency error.</div>
+            <div class="valasz">
+            A) Próbálja meg a programot teljes képernyős mód helyett ablakban futtatni.
+            B) Lehet hogy a FoxPro futtató környzet fájljai megsérültek. Letölthető innen: <a href="./foxpro1.zip">foxpro1.zip</a>
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="ujverzio"></a>
+            <div class="kerdes">K: A honlapról szeretném a legfrissebb verziójú programot telepíteni a gépemre.</div>
+            <div class="valasz">
+            A bér programon belül ellenőrizze le, hogy
+            az "Egyéb" menüben, a "Nyomtató, floppy, kódlap beállítása..." pontban
+            az "Az új bérprogram betöltése innen" beállításban melyik meghajtó betűjele szerepel.<br>
+            Töltse le a programot a fent meghatározott meghajtó gyökér könyvtárába
+            (pl "C:\" vagy "E:\"), lépjen ki a bér programból, majd futtassa le
+            az ugyanott található "ujberbe.bat" állományt.
+            Ez automatikusan a megfelelő helyre másolja az új verziójú programot.<br>
+            Ha nem találja az "ujberbe.bat" fájlt, a bér programon belül
+            először indítsa el az "Egyéb" menü "Ujberbe.bat létrehozása" című menüpontját,
+            majd próbálja újra az előzőeket.<br>
+        Új frissítő parancsfájl: <a href="./frissit.cmd">frissit.cmd</a>
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="belsomentes"></a>
+            <div class="kerdes">K: A programon belül elindítom a Mentés floppy lemezre menüpontot, de a program kérdés nélkül bezárul VAGY a program piros hibaablakot mutat, miszerint nem találja a BERMENT.RAR.DBF fájlt.</div>
+            <div class="valasz">
+            A programon belülről történő mentés a Windows XP bizonyos példányain nem működik,
+            oka számunkra egyelőre ismeretlen.<br>
+            A megoldás külső mentés batch fájl használata
+            (mentXX.bat, ahol XX=aktuális év, pl. "ment13.bat").
+            <p>
+            2007: <a href="./ment07.bat">ment07.bat</a>&nbsp;
+            2008: <a href="./ment08.bat">ment08.bat</a>&nbsp;
+            2009: <a href="./ment09.bat">ment09.bat</a>&nbsp;
+            2010: <a href="./ment10.bat">ment10.bat</a><br>
+            2011: <a href="./ment11.bat">ment11.bat</a><br>
+            2012: <a href="./ment12.bat">ment12.bat</a><br>
+            2013: <a href="./ment13.bat">ment13.bat</a><br>
+            </p>
+            Ezt ugyanabba a könyvtárba kell helyezni, mint ahol a "ber.exe" fájl is található
+            (alapértelmezetten C:\berado88\ber). A batch fájl az adott évi adat könyvtárakat
+            egy "berment.rar" állományba tömöríti (pl. "C:\berado88\b11\berment.rar"),
+            majd megpróbálja floppyra másolni a tömörített fájlt.<br>
+            Ha floppyra mentés helyett más betűjellel rendelkező egyéb meghajtóra
+            kívánja a tömörített fájlt másolni, a batch fájl utolsó sorában kell átírni
+            a "copy" parancs paramétereit.
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="mentesmashova"></a>
+            <div class="kerdes">K: A gépemen nincs floppy meghajtó / Nem floppyra szeretnék menteni.</div>
+            <div class="valasz">
+            Az "Egyéb" menü "Nyomtató, floppy, kódlap beállítása..." pontjában
+            a "Floppy/pendrájv meghajtó betűjele" beállítás alatt
+            adja meg annak a meghajtónak a betűjelét, ahová a mentést készíteni szeretné.
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="kulsomentes"></a>
+            <div class="kerdes">K: Elindítom a mentés batch fájlt és nem történik semmi, csak felvillan egy pillanatra.</div>
+            <div class="valasz">
+            Nyisson meg egy parancssort (Start->Futtatás->cmd.exe+ENTER).
+            Próbálja elindítani a "rar" programot (rar+ENTER).<br>
+            Ha nem indul el, ellenőrizze a PATH környezeti változó értékét (path+ENTER).<br>
+            Ha nem látja a bér program könyvtárát (pl. "C:\berado88\ber") a felsorolásban,
+            akkor kövesse az <a href="#pathbeallitas">itt</a> található utasításokat,
+            majd zárja be a parancssort, és próbálja újból az előbbi ellenőrzést.<br>
+            Ha a "rar" program elindul, az F10 billentyű megnyomásával lépjen ki belőle,
+            ezután a mentXX.bat már rendesen el fog indulni.
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="nyomtatas"></a>
+            <div class="kerdes">K: USB nyomtató beállítása</div>
+            <div class="valasz">
+            Egyre több új nyomtató kapható, amely csak USB porton keresztül kapcsolható a számítógéphez.<br>
+            Ebben az esetben azonban nem lehet LPT1/LPT2 néven azonosítani őket, így a program beállításai között nem lehet a nyomtatót helyesen definiálni.<br>
+            Az általunk ajánlott és sok helyen sikerrel alkalmazott megoldás a következő:<br>
+            A nyomtatót hálózaton megosztjuk, majd a megosztott névvel összekapcsoljuk az LPT1 hivatkozást.<br>
+            A szükséges lépések:
+            <ul style="list-style-type:none">
+              <li>
+                &nbsp;Nyomtató megosztása<br>
+                  Nyissa meg a nyomtatók listáját (Start->Vezérlőpult->Nyomtatók és faxok).<br>
+                  Jobb gombbal kattintson a megosztani kívánt nyomtatóra, majd válassza a Megosztás menüpontot. Itt a megosztási névnek válasszon olyat, ami könnyen megjegyezhető és nem tartalmaz szóközt vagy speicális karaktereket.
+              </li>
+              <li>
+                &nbsp;Nevek összerendelése<br>
+                  A programot indító batch fájlban (pl B08.bat), az <b><u>első</u></b> sorban szerepeljen az alábbi sor:<br>
+                  <b>net use lpt1: \\gép_neve\nyomtato_megosztási_neve</b><br>
+                  pl: net use lpt1: \\BER\HPLASER<br>
+              </li>
+            </ul>
+            Ha a fenti módon jár el, a programon belül az LPT1 néven lehet hivatkozni a nyomtatóra.
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="nyomtatas2"></a>
+            <div class="kerdes">K: USB nyomtató beállítása hálózattal nem rendelkező gépen</div>
+            <div class="valasz">
+            Az USB csatolóval ellátott nyomtatók az előző pontban leírtak alapján használhatók.<br>
+            Előfordulhat azonban, hogy a számítógépen nincs hálózat telepítve (akár biztonsági megfontolások alapján, akár azért, mert nincs benne hálózati kártya).<br>
+            Ebben az esetben először telepítenünk kell egy un. "Loopback adapter"-t, majd a fent leírtak alapján megosztani és használatba venni a nyomtatót:<br>
+            <ul style="list-style-type:none">
+              <li>&nbsp;Start->Vezérlőpult->Hardver hozzáadása</li>
+              <li>&nbsp;Kattintson a Tovább gombra</li>
+              <li>&nbsp;Miután a keresés lefutott, kattintson az "Igen, már csatlakoztattam a hardvert" lehetőségre</li>
+              <li>&nbsp;Kattintson a Tovább gombra</li>
+              <li>&nbsp;A lista legaljáról válassza ki az "Új hardvereszköz hozzáadása" sort</li>
+              <li>&nbsp;Kattintson a Tovább gombra</li>
+              <li>&nbsp;Válassza a "Telepítse a hardver eszközt..." kezdetű lehetőséget</li>
+              <li>&nbsp;Kattintson a Tovább gombra</li>
+              <li>&nbsp;Válassza ki a "Hálózati kártyák"-at</li>
+              <li>&nbsp;Kattintson a Tovább gombra</li>
+              <li>&nbsp;A gyártók listáján válassza ki a "Microsoft"-ot</li>
+              <li>&nbsp;A hálózati adapterek listáján válassza ki a "Microsoft visszacsatoló adapter"-t</li>
+              <li>&nbsp;Kattintson 2x a Tovább gombra</li>
+              <li>&nbsp;Kattintson a Befejezés gombra</li>
+            </ul>
+            Ezután a telepített hálózati csatolót kell beállítanunk:
+            <ul style="list-style-type:none">
+              <li>&nbsp;Start->Vezérlőpult->Hálózati kapcsolatok</li>
+              <li>&nbsp;Jobb gombbal kattintson a "Helyi kapcsolat"-ra, majd válassza a Tulajdonságok menüpontot</li>
+              <li>&nbsp;Kattintson a TCP/IP protokollra, majd a Tulajdonságok gombra</li>
+              <li>&nbsp;Válassza az "A következő IP-cím használata" lehetőséget</li>
+              <li>&nbsp;Az "IP-cím" mezőbe írja be: 192.168.1.1</li>
+              <li>&nbsp;Az "Alhálózati maszk" mezőbe írja be: 255.255.255.0</li>
+              <li>&nbsp;Kattintson 2x az OK gombra</li>
+            </ul>
+            Ha ezekkel sikerrel végzett, a <a href="#nyomtatas">fent leírtak szerint</a> ossza meg és vegye használatba az USB nyomtatót.
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="ujgepre"></a>
+            <div class="kerdes">K: Új gépre szeretném áttelepíteni a bér programot, mit kell tennem?</div>
+            <div class="valasz">
+            A) Windows 7/8/10 (64-bit)<br>
+            1) vDos telepítése<br></a>
+                <ul style="list-style-type:none">
+                    <li>&nbsp;A 64 bit-es Windows verziókon a bér program a <a href="https://www.vdos.info/">vDos</a> emulátor segítségévell futtatható.</li>
+                    <li>&nbsp;A vDdos program <a href="https://www.vdos.info/download.html">innen</a> tölthető le.</li>
+                    <li>&nbsp;A különböző évek futtatásához létre kell hozni egy C:\Berado88\ber\vdos alkönyvtárat,</li>
+                    <li>&nbsp;majd ebben évenként egy-egy C:\Berado88\ber\vdos\bxx alkönyvtárat (b16, b15, stb.),</li>
+                    <li>&nbsp;és ebbe bemásolni a vDos configurásiós fájljait (autoexec.txt config.txt).</li>
+                    <li>&nbsp;Az autoexec.txt fájlban be kell állítani a megfelelő meghajtót (pl.: use C: C:\Berado88) és</li>
+                    <li>&nbsp;cserélni kell a CALL DPTEST\STARTDP demó sort az adott évnek megfelelő Bxx.bat fájlra.</li>
+                    <li>&nbsp;Ezekben az indító Bxx.bat fájlokban ezek után már nem kell benne lennie a C:\Berado88 -nak az útvonalakban!</li>
+                    <li>&nbsp;A config.txt fájlban be kell állítani a következőket:</li>
+                        <ul style="list-style-type:none">
+                            <li>&nbsp;XMEM = 16 XMS</li>
+                            <li>&nbsp;MOUSE = ON</li>
+                            <li>&nbsp;FONT = CONSOLA</li>
+                            <li>&nbsp;FRAME = ON</li>
+                            <li>&nbsp;Ki kell választani a nyomtató beállítások egyikét a config.txt végén.</li>
+                            <li>vdos error pcl6.exe (PCL) or gswin32c hibaüzenet esetén <a href="http://www.columbia.edu/~em36/ghostpcl.html">ezt kell</a></li>
+                        </ul>
+                </ul>
+            2) Ikon létrehozása<br></a>
+            A különböző évekhez az ikont mindig a vDos.exe-hez kell létrehozni,</br>
+            de a munkakönvtárat a megfelelő C:\Berado88\ber\vdos\bxx alkönyvtárra kell beállítani!
+            </div>
+            </br>
+            <div class="valasz">
+            B) Windows (32-bit)<br>
+            <a name="pathbeallitas">
+            1) PATH beállítása<br></a>
+                <ul style="list-style-type:none">
+                    <li>
+                        <b>&nbsp;Windows 98</b><br>
+                        A C:\autoexec.bat fájlban a PATH= sor végére, pontosvesszővel elválasztva, írja be a könyvtár teljes elérési útját (pl. C:\Berado88\ber), ahol a bér program található.<br>
+                        Módosítás után újra kell indítani a gépet!
+                    </li>
+                    <li>
+                        <b>&nbsp;Windows XP/7/8/10</b><br>
+                        Jobb gombbal kattintson a Sajátgépre, majd válassza a Tulajdonságok menüpontot.<br>
+                        A megjelenő dialógusablakon válassza ki a Speciális fület, majd kattintson alul a Környezeti változók gombra.<br>
+                        Az alsó listában keresse meg a PATH változót, kattintson rá, majd a kattintson a Szerkesztés gombra.<br>
+                        A sor végére, pontosvesszővel elválasztva, írja be a könyvtár teljes elérési útját (pl. C:\Berado88\ber), ahol a bér program található.<br>
+                        Kattintson mindaddig az OK gombra, míg a dialógus teljesen be nem zárul.
+                    </li>
+                </ul>
+            2) CONFIG.NT/CONFIG.SYS beállítása<br>
+                <ul style="list-style-type:none">
+                    <li>
+                        <b>&nbsp;Windows 98</b><br>
+                        A C:\config.sys fájlban a FILES= utáni szám legalább 150 legyen. Módosítása után újra kell indítani a gépet!
+                    </li>
+                    <li>
+                        <b>&nbsp;Windows XP</b><br>
+                        A Windows\system32\CONFIG.NT fájlban, alul, a FILES= utáni szám legalább 150 legyen.
+                    </li>
+                    <li>
+                                                <b>&nbsp;Windows 7/8/10 (32-bit)</b><br>
+                                                Windows magyar verzióiban ahhoz, hogy az ékezetes betűket megfelelően tudjuk használni, a fentieken kívül további beállításokat is kell alkalmazni:<br>
+                                                A Windows\system32\CONFIG.NT fájlba alulra illesszük be az alábbi sort:<br>
+                                                    <b>country=036,852,c:\windows\system32\keyboard.sys</b><br>
+                                                A Windows\system32\Autoexec.nt fájlba alulra illesszük be az alábbi sort:<br>
+                                                    <b>C:\windows\system32\kb16 HU,852,c:\windows\system32\keyboard.sys</b><br>
+                                                <i>FIGYELEM! a "kb16" és a "HU" között 1 db szóköznek kell lenni!!!</i>
+                    </li>
+                </ul>
+            3) Ikon létrehozása<br>
+                <ul style="list-style-type:none">
+                    <li>
+                        <b>&nbsp;Windows 98</b><br>
+                        Az Asztalon a szokásos módon hozzon létre indítóikont, ami a Ber??.bat fájlra mutat.
+                    </li>
+                    <li>
+                        <b>&nbsp;Windows XP/7/8/10</b><br>
+                        Az Asztalon hozzon létre egy indítóikont, ami a ber.exe fájlra mutat.<br>
+                        Jobb gombbal kattintson a létrehozott ikonra, majd válassza a Tulajdonságok menüpontot.<br>
+                        Kattintson a Memória fülre, majd minden memóriatípus kezelését állítsa Automatikusra.<br>
+                        A Program fülre kattintva állítsa át a programot a ber.exe-ről a megfelelő Ber??.bat fájlra.<br>
+                        Az OK gombra kattintva zárja be a dialógusablakot.
+                    </li>
+                </ul>
+            4) Nyomtató/meghajtók beállítása<br>
+            5) UJBERBE.BAT létrehozása<br>
+            6) Nyomtatás ellenőrzése<br>
+            7) Mentés ellenőrzése/mentXX.bat
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="2004"></a>
+            <div class="kerdes">K: A 2004-es bér program indításkor az alábbi hibaüzenetet adja, majd kilép:<br>
+            "Az indexelés nem sikerült, mert más is használja a fájlt.JOVELEM"</div>
+            <div class="valasz">
+            A javított 2004-es program letölthető <a href="ber04exe.zip">innen.</a>
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="2006"></a>
+            <div class="kerdes">K: A 2006-os bér program a 06084-es bevallásban programhibával kilép.<br>
+            </div>
+            <div class="valasz">
+            A javított 2006-os program letölthető <a href="ber06exe.zip">innen.</a>
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="2009"></a>
+            <div class="kerdes">K: A 2009-es bér program hiányzik<br>
+            </div>
+            <div class="valasz">
+            A 2009-es program letölthető <a href="ber09exe.zip">innen.</a>
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="2010"></a>
+            <div class="kerdes">K: 2010-es bér program "Csak a 2011-2012-es év adataival használható" üzenettel kilép .<br>
+            </div>
+            <div class="valasz">
+            A javított 2010-es program letölthető <a href="ber10exe.zip">innen.</a>
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="2011"></a>
+            <div class="kerdes">K: 2011-es bér program programhibával kilép .<br>
+            </div>
+            <div class="valasz">
+            A javított 2011-es program letölthető <a href="ber11exe.zip">innen.</a>
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="2012"></a>
+            <div class="kerdes">K: 2012-es bér program "Csak a 2013-2014-es év adataival használható" üzenettel kilép .<br>
+            </div>
+            <div class="valasz">
+            A javított 2012-es program letölthető <a href="ber12exe.zip">innen.</a>
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="2014"></a>
+            <div class="kerdes">K: 2014-es bér program hibaüzenet nélkül kilép .<br>
+            </div>
+            <div class="valasz">
+            A javított 2014-es program letölthető <a href="ber14exe.zip">innen.</a>
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="2015"></a>
+            <div class="kerdes">K: 2015-ös bér program nem indul<br>
+            </div>
+            <div class="valasz">
+            A hiányzó 2015-ös program letölthető <a href="ber15exe.zip">innen.</a></br>
+            Ne felejtse el ellenőrizni, hogy az indító b15.bat fájlban ber.exe helyett b15.exe szerepeljen!
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="2016"></a>
+            <div class="kerdes">K: 2016-os bér program nem indul<br>
+            </div>
+            <div class="valasz">
+            A hiányzó 2016-os program letölthető <a href="ber16exe.zip">innen.</a></br>
+            Ne felejtse el ellenőrizni, hogy az indító b16.bat fájlban ber.exe helyett b16.exe szerepeljen!
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="2017"></a>
+            <div class="kerdes">K: 2017-es bér program nem indul<br>
+            </div>
+            <div class="valasz">
+            A hiányzó 2017-es program letölthető <a href="ber17exe.zip">innen.</a></br>
+            Ne felejtse el ellenőrizni, hogy az indító b17.bat fájlban ber.exe helyett b17.exe szerepeljen!
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="2018"></a>
+            <div class="kerdes">K: 2018-as bér program nem indul<br>
+            </div>
+            <div class="valasz">
+            A hiányzó 2018-as program letölthető <a href="ber18exe.zip">innen.</a></br>
+            Ne felejtse el ellenőrizni, hogy az indító b18.bat fájlban ber.exe helyett b18.exe szerepeljen!
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="2019"></a>
+            <div class="kerdes">K: 2019-es bér program nem indul<br>
+            </div>
+            <div class="valasz">
+            A hiányzó 2019-es program letölthető <a href="ber19exe.zip">innen.</a></br>
+            Ne felejtse el ellenőrizni, hogy az indító b19.bat fájlban ber.exe helyett b19.exe szerepeljen!
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="onrevizio"></a>
+            <div class="kerdes">K: Hogyan tudok Abev önrevíziót készíteni a 2009-, 2010-es évekre?<br>
+            </div>
+            <div class="valasz">
+            Az ONREV.EXE program letölthető <a href="onrev.exe">innen.</a></br>
+            A programhoz indítóikont kell csinálni a 2009-es bér ikon másolásával, majd</br>
+            az új ikonra az egér jobb gombjával kattintva, a tulajdonságoknál, a prorgam fülön</br>
+            a B09.BAT indítását át kell írni a következőképpen (a könyvtárneveket megfelelően módosítva):</br>
+               c:\berado88\ber\onrev.exe c:\berado88\b09\kozosdbf c:\berado88\b09\probaceg 2009</br>
+            Az A nyomtatvány első oldalán feltétlenül ellenőrizze a magánszemélyhez nem köthető kötelezettségeket!
+            </div>
+        </div>
+
+        <div id="info">
+            <a name="uniqwt"></a>
+            <div class="kerdes">K: A program "Collating sequence UNIQWT not found" programhibával kilép<br>
+            </div>
+            <div class="valasz">
+            1. A 2013-as (!) bérprogramból futtatni kell az "Egyéb"->"852-es kódlap beállítása a korábbi években" menüt.</br>
+            2. A korábbi év könyváraiban törölni kell az összes könyvárból a *.cdx és *.ind fájlokat.</br>
+            3. A Bér vagy Foxpro könyvtárban (telepítéstől függ hogy hol vannak) a config.03 fájlban javítani kell erre:</br>
+               codepage=852</br>
+               collate=HUNGARY</br>
+            4. Átnézni a többi config.XX éveket is, és hasonlóan javítani.</br>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="rightcontent">
+        <div id="linkList">
+            <div id="lhome">
+                <h3 class="home">Főoldal</h3>
+                <ul>
+                    <li><a href="./index.html">Főoldal</a></li>
+                </ul>
+            </div>
+
+            <div id="lfaq">
+                <h3 class="faq">Tájékoztatók:</h3>
+                <ul>
+                    <li><a href="./doc.html">Összes tájékoztató</a></li>
+                </ul>
+            </div>
+
+            <div id="lhasznos">
+                <h3 class="hasznos">Hasznos helyek:</h3>
+                <ul>
+                    <li><a href="http://www.apeh.hu">APEH</a></li>
+                    <li><a href="http://www.ksh.hu">KSH</a></li>
+                    <li><a href="http://www.oep.hu">OEP</a></li>
+                    <li><a href="http://www.onyf.hu">ONYF</a></li>
+                </ul>
+            </div>
+
+            <div id="lvegyes">
+                <h3 class="vegyes">Ide írhatsz:</h3>
+                <ul>
+                    <li><a href="mailto:berado88@gmail.com">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1239219-1";
+urchinTracker();
+</script>
+</body>
+</html>
